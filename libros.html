@@ -1,0 +1,6 @@
+<div ng-repeat='libro in libros'>
+   <!-- para ver todos los campos {{libro}} -->
+  <div class="notification is-info">
+    <h2><a href="#!libro/{{libro.nid[0].value}}">{{ libro.title[0].value }}</a></h2>
+  <p ng-bind-html="libro.body[0].value | rawHtml"> </p>
+</div>
